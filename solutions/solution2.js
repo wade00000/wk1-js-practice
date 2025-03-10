@@ -6,13 +6,13 @@ function speedChecker(speed){
       return "OK!"
     }
 
-    let demeritPoints = Math.floor((speed-speedLimit)/kmPerDemerit)
-     if(demeritPoints <= 12){
-        return `Demerit points = ${demeritPoints}`
-     }else if (demeritPoints > 12){
-        return "Lisence Suspended"
-     }
-  
+    let demeritPoints = Math.floor((speed-speedLimit)/kmPerDemerit) // calculates demerit points
+    
+    if(demeritPoints <= 12){
+       return `Demerit points = ${demeritPoints}`
+    }else if (demeritPoints > 12){
+       return "Lisence Suspended"
+    }
   }
   
    console.log(speedChecker(180))
