@@ -78,4 +78,4 @@ function netSalaryCalc(basicSalary, benefits) {
     };
   }
 
-   console.log (netSalaryCalc("20000","3000"))
+   console.log (netSalaryCalc("20000","5500"))
