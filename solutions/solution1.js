@@ -1,7 +1,8 @@
 function gradeSelector(marks) {
     if (typeof marks !== 'number'){
-        return "This is an invalid input !"
+        return "This is an invalid input !" // prevents entry of data types other than numbers
     }
+        
     
     if (marks >= 0 && marks < 40) {
       return "E";
@@ -14,8 +15,10 @@ function gradeSelector(marks) {
     } else if (marks >= 80 && marks <= 100) {
       return "A";
     } else {
-      return "Marks range is 0 to 100";
+      return "Marks range is 0 to 100"; //checks for invalid input
     }
   }
   
   console.log(gradeSelector());
+
+
